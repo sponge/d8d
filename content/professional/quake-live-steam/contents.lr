@@ -15,6 +15,6 @@ gallery: yes
 ---
 sort_key: 1
 ---
-summary: Steam exclusive version
+summary: As Quake Live wound down, I had the opportunity to convert the game into a standalone product for one final release. Codenamed the "Eternal Edition," this iteration of Quake Live was about a year of work, including a from scratch rewrite of the web based frontend, to serve from the local machine instead of the web UI.
 ---
 year: 2014-2016

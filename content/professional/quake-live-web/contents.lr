@@ -4,7 +4,7 @@ description: Full text description
 ---
 sort_key: 1
 ---
-summary: I made most of quake live!
+summary: The web version of Quake Live was a free to play service, with most of the game hosted on a dedicated backend. I started working on the frontend, but by the end of the service, was running all aspects of it, including the Python backend, Cassandra cluster, and DevOps of all backend machines and game server farm.
 ---
 year: 2009-2016
 ---
