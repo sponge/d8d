@@ -1,8 +1,8 @@
 [project]
 name = d8d
 
-[servers.d8d]
-name = d8d
+[servers.ghpages]
+name = GitHub
 enabled = yes
 default = yes
-target = rsync://spongeserv.com/var/www/d8d_static
+target = ghpages://sponge/sponge.github.io
