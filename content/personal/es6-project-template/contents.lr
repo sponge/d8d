@@ -1,0 +1,10 @@
+name: ES6 Project Template
+---
+actions:
+
+#### link ####
+name: View Source
+----
+url: https://github.com/sponge/sponge-hates-setting-up-small-js-projects
+----
+newWindow: yes

@@ -1,0 +1,10 @@
+name: 403 Forbidden
+---
+actions:
+
+#### link ####
+name: View Site
+----
+url: http://403forbidden.org/
+----
+newWindow: yes

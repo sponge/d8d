@@ -1,0 +1,8 @@
+[project]
+name = d8d
+
+[servers.d8d]
+name = d8d
+enabled = yes
+default = yes
+target = rsync://spongeserv.com/var/www/d8d_static

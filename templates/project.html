@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.name }} ({{ this.year }}){% endblock %}
+{% block body %}
+  <header>
+    <h1>{{ this.name }}</h1>
+    {% if this.year %}{{ this.year }}<br/>{% endif %}
+    <div class="actions">{{ this.actions }}</div>
+  </header>
+  <main class="project-page">
+    <p>{{ this.description }}</p>
+    {% set images = this.attachments.images.all() %}
+    {% if images and this.gallery %}
+      <button id="prevButton">&laquo;</button>
+      <div class="carousel">
+        {% for image in images %}
+          <a class="gallery" href="{{ image|url }}"><img src="{{ image.thumbnail(160,120,crop=True)|url }}" alt=""></a>
+        {% endfor %}
+      </div>
+      <button id="nextButton">&raquo;</button>
+    {% endif %}
+  </main>
+{% endblock %}

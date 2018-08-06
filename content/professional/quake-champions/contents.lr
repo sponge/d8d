@@ -1,0 +1,18 @@
+name: Quake Champions
+---
+description: I did the stats site!
+---
+year: 2018
+---
+summary: This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site! This is a summary of the stats site!
+---
+sort_key: 0
+---
+actions:
+
+#### link ####
+name: Stats Site
+----
+url: https://stats.quake.com
+----
+newWindow: yes

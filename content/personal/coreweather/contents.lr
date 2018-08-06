@@ -1,0 +1,10 @@
+name: CoreWeather
+---
+actions:
+
+#### link ####
+name: View Source
+----
+url: https://github.com/sponge/coreweather
+----
+newWindow: yes

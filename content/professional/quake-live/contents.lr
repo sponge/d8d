@@ -1,0 +1,20 @@
+name: Quake Live
+---
+description: Full text description
+---
+sort_key: 1
+---
+summary: I made most of quake live!
+---
+year: 2009-2016
+---
+actions:
+
+#### link ####
+name: Official Site
+----
+url: https://www.quakelive.com
+----
+newWindow: yes
+---
+gallery: yes

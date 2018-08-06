@@ -1,0 +1,14 @@
+name: ET:QW Map Viewer
+---
+actions:
+
+#### link ####
+name: View Project
+----
+url: https://hosted.d8d.org/etqwmaps/
+----
+newWindow: 
+---
+sort_key: 10
+---
+_hidden: no

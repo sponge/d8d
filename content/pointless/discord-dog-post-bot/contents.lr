@@ -1,0 +1,10 @@
+name: Discord Dog Post Bot
+---
+actions:
+
+#### link ####
+name: View Source
+----
+url: https://github.com/sponge/dogbot
+----
+newWindow: yes

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.name }}{% endblock %}
+{% block body %}
+  <header>
+    <h1>{{ this.name }}</h1>
+  </header>
+  <main class="projects-page">
+  {% for project in this.children %}
+    <div class="project">
+      {% set image = project.attachments.images.first() %}
+      {% if project.description|string|length == 0 %}
+        {% set action = project.actions.blocks.0 %}
+        {% set projectUrl = action.url %}
+        {% set target = "blank" if action.newWindow else "" %}
+      {% else %}
+        {% set projectUrl = project|url %}
+        {% set target = "" %}
+      {% endif %}
+      {% if image %}
+        <a href="{{ projectUrl }}" target="{{ target }}"><img src="{{ image.thumbnail(240,180,crop=True,quality=85)|url }}" alt=""></a>
+      {% endif %}
+      <div class="info">
+        <h2>
+          <a href="{{ projectUrl }}" target="{{ target }}"}>{{ project.name }}</a>
+          {% if project.year %}<em>({{ project.year }})</em>{% endif %}
+        </h2>
+        <p>{{ project.summary }}</p>
+      </div>
+    </div>
+  {% endfor %}
+  </main>
+{% endblock %}
