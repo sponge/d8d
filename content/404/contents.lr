@@ -1,0 +1,9 @@
+_model: page
+---
+title: 404
+---
+body: There's no page here, sorry about that. [Head back home](/) and try again.
+---
+_slug: 404.html
+---
+header: # Page Not Found
