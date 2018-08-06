@@ -1,0 +1,20 @@
+name: Quake Live Steam
+---
+actions:
+
+#### link ####
+name: Official Site
+----
+url: https://www.quakelive.com
+----
+newWindow: yes
+---
+description: Steam exclusive description
+---
+gallery: yes
+---
+sort_key: 1
+---
+summary: Steam exclusive version
+---
+year: 2014-2016
