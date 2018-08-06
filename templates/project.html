@@ -7,7 +7,7 @@
     <div class="actions">{{ this.actions }}</div>
   </header>
   <main class="project-page">
-    <p>{{ this.description }}</p>
+    {{ this.description }}
     {% set images = this.attachments.images.all() %}
     {% if images and this.gallery %}
       <button id="prevButton">&laquo;</button>

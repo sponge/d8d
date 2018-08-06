@@ -106,6 +106,12 @@ main li {
   margin-bottom: 1em;
 }
 
+/* other main content styles */
+
+main p:first-child {
+  margin-top: 0;
+}
+
 /* projects page */
 
 .project {
