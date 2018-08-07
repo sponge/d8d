@@ -9,12 +9,27 @@ url: https://www.quakelive.com
 ----
 newWindow: yes
 ---
-description: Steam exclusive description
+description:
+
+Quake Live ran as a service for about 7 years, and most of that time was spent running as a browser plugin. As browser vendors began to kick native plugins out of their browsers, we knew we had to do something. Our solution was to flip things around: instead of embedding the game in the browser, we'd just embed the browser into the game. This ended up working pretty well, requiring mostly UI and initialization changes to correct some now incorrect assumptions. I emulated the plugin's interface within the game directly, and the game was mostly happy.
+
+Once we decided to discontinue the service, we would have to figure out how to do everything we used to do on the web completely on the player's PC. Since Quake Live's underlying UI was still basically 15 year old Quake 3 code, it would not have been feasible to reach that minimum quality bar to ship something even decent. Thankfully, the decision to embed the browser in the game a year earlier was ultimately what made this possible.
+
+Code named the "Eternal Edition," this final version would ironically bring the game back to how it started: as a stand-alone product with user run servers. We wanted to use as much of the Steam platform as possible, and this required a bunch of core changes to the engine. The big points from service to Steam from my perspective were:
+
+- Rewrote the entire UI from scratch to run locally on the user's PC. Data was fed through extending the JavaScript object that the engine provided to the browser. I chose React for this project, which was very early in development during 2014 and 2015, recognizing the potential of reusable components in frontend development. React, even in it's infancy, ended up being a huge reason why the UI was successful.
+- Ripped out font rendering and replaced it with a TTF rendering based on [FontStash](https://github.com/memononen/fontstash). We needed to support rendering UTF-8 names, and the increased rendering quality made the in-game 2D UI look fantastic.
+- Replaced the stats pipeline with a ZeroMQ based solution. This let people access more stats than we even had originally, real-time, and let them feed it through external software written in any language. This ended up being really cool, and is definitely something I wish more games had.
+- Refactored filesystem code to support reading from multiple directories. This let us integrate with Steam Workshop, which ended up being very popular for maps.
+- Integrated into the server features that were originally on the backend. Better map pool support, the ability to switch gametypes on one server, and make your own gamemodes by combining console CVars.
+- An easter egg that has been found but still not successfully decoded!
+
+Overall, this transition was successful, and I am immensely proud of what we pulled off as a 3 person team.
 ---
 gallery: yes
 ---
 sort_key: 1
 ---
-summary: As Quake Live wound down, I had the opportunity to convert the game into a standalone product for one final release. Codenamed the "Eternal Edition," this iteration of Quake Live was about a year of work, including a from scratch rewrite of the web based frontend, to serve from the local machine instead of the web UI.
+summary: As Quake Live wound down, we had the opportunity to convert the game into a standalone product for one final release. This iteration of Quake Live was about a year of work, including a from scratch rewrite of the web based frontend.
 ---
 year: 2014-2016
