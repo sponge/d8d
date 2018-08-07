@@ -17,7 +17,7 @@
         {% set target = "" %}
       {% endif %}
       {% if image %}
-        <a href="{{ projectUrl }}" target="{{ target }}"><img src="{{ image.thumbnail(240,180,crop=True,quality=85)|url }}" alt=""></a>
+        <a href="{{ projectUrl }}" target="{{ target }}"><img src="{{ image.thumbnail(320,180,crop=True,quality=85)|url }}" alt=""></a>
       {% endif %}
       <div class="info">
         <h2>

@@ -13,7 +13,7 @@
       <div class="carousel-container">
         <button id="prevButton">&laquo;</button><div class="carousel">
           {% for image in images %}
-            <a class="gallery" href="{{ image|url }}"><img src="{{ image.thumbnail(160,120,crop=True)|url }}" alt=""></a>
+            <a class="gallery" href="{{ image|url }}"><img src="{{ image.thumbnail(213,120,crop=True)|url }}" alt=""></a>
           {% endfor %}
         </div><button id="nextButton">&raquo;</button>
       </div>
