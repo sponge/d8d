@@ -12,7 +12,7 @@ Donec nec arcu vitae arcu maximus porta non vel magna. Duis ac malesuada ante. P
 
 Nunc dapibus leo a urna tincidunt sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eget tempor mi. Ut dolor mauris, commodo a nisl vel, sagittis convallis augue. Maecenas eget vulputate dui, sit amet euismod dui. Vivamus lacinia ante eget magna sodales maximus. Proin aliquam urna nunc, ac aliquet eros venenatis pretium. Nullam commodo non ante non convallis. Nam malesuada urna ac ipsum mollis, eu pellentesque lacus euismod. Morbi auctor laoreet nisl, sed mollis sapien elementum nec. Aenean gravida magna in justo pulvinar viverra. Suspendisse accumsan augue eu dictum aliquet. Pellentesque sodales vehicula varius.
 ---
-summary: A game created for Awful Summer Jam 2018
+summary: A game created for Awful Summer Jam 2018, themed "Unnecessary Sequels." Relive the history of fictional British game developer Clive Sturridge through the ages, with his original hit "Battlement Defence" and it's many needless sequels.
 ---
 year: 
 ---
@@ -24,3 +24,7 @@ name: itch.io Page
 url: https://alligator.itch.io/clive
 ----
 newWindow: yes
+---
+sort_key: 1
+---
+gallery: yes

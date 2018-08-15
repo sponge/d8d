@@ -8,3 +8,5 @@ name: Source Code
 url: https://github.com/sponge/sdlgame/
 ----
 newWindow: yes
+---
+sort_key: 2

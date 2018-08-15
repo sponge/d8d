@@ -1,0 +1,36 @@
+name: E-Ink Weather
+---
+description:
+
+I've always had a love for e-ink screens. Their qualities of not requiring power except to update, and visibility in direct light are unlike any other display technology. Images displayed on them just look more real and physical than a normal LCD.
+
+In looking for a project to play with Arduino/ESP8266 boards, I found, and eventually settled on, the [Waveshare e-ink screens](https://www.amazon.com/HAT-Resolution-Electronic-Controller-Compatible/dp/B0769XXSXR) that are widely available on Amazon. They are also the only manufacturer that makes screens this large, with [Pervasive Displays](http://www.pervasivedisplays.com/) offering better screens that support partial updates, but seem to be near impossible to find at the 7 inch and above level.
+
+Driving the screen is an [Adafruit Featuer HUZZAH ESP8266](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview) which has the advantage of a battery connection that can be recharged through USB on the board directly. I'm not much of a hardware person at all, so having the battery and USB connections on board was critical.
+
+Programming the board was pretty simple. I decided to take the route of doing all the rendering on the server side, with the client minus libraries being not much more than 100 lines. The client just grabs a file from the given URL, sending an [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) in the request saved in the EEPROM, to further save on transmission time if the file hasn't changed. and feeds it directly to the URL. The board then goes to deep sleep for 20 minutes, which turns everything off including the CPU; only the Real Time Clock stays running.
+
+With this update schedule, I get about a month of battery life with my current 2500mAH battery. While research indicated I could probably be getting battery life in the 2-3 month range, I'm not sure how much more I can currently do.
+
+The server side is a Python script ran from a cron job that dumps an image to disk. This is the part that does all the image processing, API calls. The script's output is a buffer of packed pixels, with 8 black or white pixels per byte. This is what lets me dump it right into the e-ink screen's controller on the ESP8266.
+
+There's probably a lot of other potential things to display on the screen, I just have a weird thing for [weather displays](/personal/coreweather). The slow refresh time (~7 seconds) to refresh the screen means you probably don't want to refresh too frequently otherwise it'll get annoying, even if power isn't a concern.
+
+This project was a lot of fun, and I hope that somehow in the future I can replace the screen and do something that updates a little more frequently. I really like the idea of having a display that doesn't cause eye strain on your desk that blends in.
+---
+sort_key: 3
+---
+summary: An e-ink display powered by an ESP8266 that occasionally connects to Wi-Fi to refresh its display with weather, or any other infrequently updating displays.
+---
+year: 2018
+---
+actions:
+
+#### link ####
+name: Source Code
+----
+url: https://github.com/sponge/epaper
+----
+newWindow: yes
+---
+gallery: yes

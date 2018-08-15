@@ -8,3 +8,13 @@ name: View Source
 url: https://github.com/sponge/coreweather
 ----
 newWindow: yes
+---
+sort_key: 4
+---
+gallery: yes
+---
+year: 2017
+---
+description: description
+---
+summary: A C# script embedded into a Discord bot that generates early 90s style Weather Channel displays.
