@@ -8,3 +8,7 @@ name: View Project
 url: https://hosted.d8d.org/rolling
 ----
 newWindow: 
+---
+summary: A JavaScript bookmarklet (remember those?) to play Rolling Start from Daytona USA on any webpage. I had to extract the scrolling banner from stitching together emulator screenshots, it was a huge pain.
+---
+year: 2010

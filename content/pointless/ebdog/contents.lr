@@ -8,3 +8,7 @@ name: Watch the Dogs
 url: https://hosted.d8d.org/ebdog
 ----
 newWindow: 
+---
+summary: Another weird little Earthbound related thing. This one features state-of-the-art dog AI in order to simulate the activities of a dog, and prevents dogs from doing the same activity. Put a number in the has and reload to increase the amount of dogs. Uses [Phaser](https://phaser.io/) for rendering.
+---
+year: 2017

@@ -8,3 +8,7 @@ name: View Source
 url: https://github.com/sponge/dogbot
 ----
 newWindow: yes
+---
+summary: A quick and dumb Discord bot that continually edits a message in a given channel on a timer, purporting to be the server's rules. It's actually just dogs from my Tumblr [That's a Good-Ass Dog](http://goodass.dog)
+---
+year: 2018
