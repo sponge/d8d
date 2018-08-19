@@ -5,4 +5,4 @@ name = d8d
 name = GitHub
 enabled = yes
 default = yes
-target = ghpages+https://sponge/sponge.github.io?cname=new.d8d.org
+target = ghpages+https://sponge/sponge.github.io?cname=d8d.org
