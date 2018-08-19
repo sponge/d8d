@@ -17,9 +17,9 @@ description:
 
 My unnamed 2D game engine (sometimes known as `sdlgame` since that's the GitHub repo name) has been a long-term on and off personal project since July 2016. It's primarily just been a fun thing to work on, without any real end goal for shipping a game. It also has served to be one of the biggest sources of learning C++ and understanding the consequences of certain lower level designs. It has, however, successfully been used to bring a game from start to completion! [Clive Sturridge's Battlement Defense Legacy Collection](/personal/clive) uses this engine, and the experience of using it was surprisingly pretty good!
 
-The engine doesn't really prescribe any big opinions on structure or API (there's not even any sort of ECS included) but the biggest inspirations were probably [PICO-8](https://www.lexaloffle.com/pico-8.php) and [TIC-80](https://tic.computer/). Fantasy console APIs are a great sweet spot of what most people need for making 2D games, and I just wanted something that has a similar API, but without the other restrictions that normally come with fantasy consoles.
+The engine doesn't really prescribe any big opinions on structure or API (there's not even any sort of ECS included) but the biggest inspirations were probably [PICO-8](https://www.lexaloffle.com/pico-8.php) and [TIC-80](https://tic.computer/). Fantasy console APIs are a great sweet spot of what most people need for making 2D games, and I just wanted something that has a similar API, but without the other restrictions like code size, or color palettes.
 
-While the engine originally started off supporting DLLs for loading game code, the default DLL has now evolved to support the [Wren scripting language](http://wren.io/). Wren has been an absolute delight to use, it feels like a modern Lua without the weirdness, or a little like a tiny modern JavaScript. I ended up implementing Wren in this engine in order to try it out, and have been a big fan of it since.
+While the engine originally supports external DLLs for loading game code, the default DLL has now evolved to support the [Wren scripting language](http://wren.io/). Wren has been an absolute delight to use, it feels like a modern Lua without the weirdness, or a little like a tiny modern JavaScript. I started off using Wren in the TIC-80 fantasy console, and knew I wanted to embed it into my engine.
 
 It is made up of several pre-existing libraries:
 
@@ -32,7 +32,7 @@ It is made up of several pre-existing libraries:
 - [TMX C Loader](https://github.com/baylej/tmx) - loading [Tiled](https://www.mapeditor.org/) maps
 - [GLEW](http://glew.sourceforge.net/) - GL extension support
 
-`sdlgame` currently runs on Windows, web via Emscripten, and OS X. It probably also runs on Linux, but I haven't bothered to try.
+`sdlgame` currently runs on Windows, and web via Emscripten. It has ran on OS X in the past, but it is probably suffering from some bitrot. It probably also runs on Linux, but I haven't bothered to try.
 ---
 year: 2016-
 ---

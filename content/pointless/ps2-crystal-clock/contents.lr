@@ -2,7 +2,7 @@ name: PS2 Crystal Clock
 ---
 description: 
 ---
-summary: The background of the PS2 BIOS is amazing, which of course means that I needed to try and recreate it. I was able to get pretty close, but couldn't figure out the screen-space reflections. Built using [three.js](https://threejs.org/) which was a little frustrating to work with, especially with materials.
+summary: The background of the PS2 BIOS is amazing, which of course means that I needed to try and recreate it. I was able to get pretty close, but couldn't figure out the screen-space reflections. Built using [three.js](https://threejs.org/) which was a little frustrating to work with, especially with materials. [Source code](https://github.com/sponge/ps2bios) available.
 ---
 actions:
 

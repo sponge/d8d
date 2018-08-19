@@ -9,6 +9,6 @@ url: https://hosted.d8d.org/ebdog
 ----
 newWindow: 
 ---
-summary: Another weird little Earthbound related thing. This one features state-of-the-art dog AI in order to simulate the activities of a dog, and prevents dogs from doing the same activity. Put a number in the has and reload to increase the amount of dogs. Uses [Phaser](https://phaser.io/) for rendering.
+summary: Another weird little Earthbound related thing. This one features state-of-the-art dog AI in order to simulate the activities of a dog, and prevents dogs from doing the same dog stuff in the same space. Put a number in the URL's hash and reload to change the amount of dogs. Uses [Phaser](https://phaser.io/) for rendering.  [Source code](https://github.com/sponge/ebdog) available.
 ---
 year: 2017
