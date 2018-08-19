@@ -15,6 +15,10 @@ gallery: yes
 ---
 year: 2017
 ---
-description: description
+description:
+
+A community I'm in moved from IRC to Discord, and with it came a rewrite of our channel bot. As someone who loves the aesthetic of the old WeatherStar 4000, I wanted to make a static image inspired by it. Pretty simple, besides having to wrestle with incompatible ImageSharp updates.
+
+While it is used entirely in the Discord bot, I originally wrote it, and occasionally have to update it in this separate repository. It'll dump out a PNG, and uses the Dark Sky weather API on it's own.
 ---
 summary: A C# script embedded into a Discord bot that generates early 90s style Weather Channel displays.

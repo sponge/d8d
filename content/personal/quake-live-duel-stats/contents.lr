@@ -16,3 +16,15 @@ url: https://github.com/sponge/qlduelstats
 newWindow: yes
 ---
 sort_key: 5
+---
+description:
+
+This was a project that was only possible due to the Quake Live Steam release having an externally accessible stats socket, and the [QLStats](https://qlstats.net/) project becoming a centralized site that many popular servers signed up on. They were able to pull off duel mode matches for later offline processing.
+
+After a couple of weeks, we had over 100,000 matches logged, and with a combination of Python as a sort of reducer, and then Google Sheets to explore the data, the conclusions were frankly surprising. It appears that in most Quake Live duel matches, the winner is the same person who was ahead by only 2 or 3 minutes into a 10 minute duel. This is probably due to how punishing the gameplay was to the player who was down. It also measured the quality of the Glicko-2 system used by QLStats, which was ultimately a fairly good indicator of a match outcome. However it seemed the person who scored the first frag was an even better indicator of predicting the winner than skill rating.
+
+The data collected here is probably one of the larger sets of data that I'm aware of that has been publicly released from a game, with the original JSON events being included in the Git repository.
+---
+summary: Analysis of 100,000 Quake Live duel matches, in an attempt to determine competitiveness, and the likelihood of winning over time and score gap.
+---
+year: 2017

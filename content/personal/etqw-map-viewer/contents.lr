@@ -12,3 +12,11 @@ newWindow:
 sort_key: 6
 ---
 _hidden: no
+---
+description: Using a console command that would automatically take screenshots one tile at a time, I was able to pretty quickly get screenshots of all the maps in Quake Wars, except for one which used some tricks to overlay multiple areas on the same geometry. The end result was a pretty cool look at what Megatexture could do at the time. Area 22 and Refinery are great examples, especially in the mountainous areas.
+---
+gallery: yes
+---
+summary: Zoom and pan maps from Splash Damage's 2007 title, Enemy Territory: Quake Wars.
+---
+year: 2007
