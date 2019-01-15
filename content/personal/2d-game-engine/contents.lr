@@ -25,7 +25,6 @@ It is made up of several pre-existing libraries:
 
 - [SDL](https://www.libsdl.org) - windowing, OpenGL context, input, DLL support
 - [Wren](https://www.wren.io) - embedded scripting language  
-- [NanoVG](https://github.com/memononen/nanovg/) - 2d graphics  
 - [PhysicsFS](https://icculus.org/physfs/) - virtual filesystem, zip loading
 - [dear imgui](https://github.com/ocornut/imgui) - debugging tools  
 - [SoLoud](http://sol.gfxile.net/soloud/) - audio engine  
