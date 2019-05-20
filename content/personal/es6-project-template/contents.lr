@@ -28,7 +28,7 @@ description:
 
 No solutions are included for testing, templating, or CSS pre-processing. These can, however, easily be added to the dependencies through `npm install --save` or `--save-dev`. Clone the project, reset the git repo, and then run `npm install` to install all the dependencies. Use `npm start` to run a development server, and `npm build` to output a bundled build to the `dist` folder.
 ---
-sort_key: 0
+sort_key: 4
 ---
 summary: This is my project template for browser-based ES6 projects, lovingly known as "sponge-hates-setting-up-small-js-projects." It is an extremely minimal project template for developing ES6 JavaScript pages in modern browsers.
 ---

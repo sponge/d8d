@@ -1,0 +1,38 @@
+name: Slate2D
+---
+actions:
+
+#### link ####
+name: Source Code
+----
+url: https://github.com/sponge/sdlgame/
+----
+newWindow: yes
+---
+sort_key: 0
+---
+summary: A toy 2D engine written in C++, with mod support through a DLL containing all gamecode. Supports a drawing command set similar to fantasy consoles, but without intentional restrictions. Scripting language support provided through Wren.
+---
+description:
+
+My 2D engine, Slate2D, has been a long-term on and off personal project since July 2016. It's primarily just been a fun thing to work on, without any real end goal for shipping a game. It also has served to be one of the biggest sources of learning C++ and understanding the consequences of architectural decisions. Despite its tatus, it has successfully been used to take a game to completion! [Clive Sturridge's Battlement Defense Legacy Collection](/personal/clive) and [Hot Air](/personal/hot-air) use this engine, and the experience of using it was surprisingly pretty good!
+
+The engine doesn't really prescribe any big opinions on structure or API; there's not even any sort of ECS included. The biggest API inspirations were probably [PICO-8](https://www.lexaloffle.com/pico-8.php) and [TIC-80](https://tic.computer/). Fantasy console APIs are a great sweet spot of what most people need for making 2D games, and I just wanted something that has a similar API, without their creative restrictions.
+
+While the engine originally supports external DLLs for loading game code, the default DLL has now evolved to support the [Wren scripting language](http://wren.io/). Wren has been an absolute delight to use, it feels like a modern Lua without the weirdness, or a little like a tiny modern JavaScript. I started off using Wren in the TIC-80 fantasy console, and knew I wanted to embed it into my engine.
+
+It is made up of several pre-existing libraries:
+
+- [SDL](https://www.libsdl.org) - windowing, OpenGL context, input, DLL support
+- [Wren](https://www.wren.io) - embedded scripting language  
+- [PhysicsFS](https://icculus.org/physfs/) - virtual filesystem, zip loading
+- [dear imgui](https://github.com/ocornut/imgui) - debugging tools  
+- [SoLoud](http://sol.gfxile.net/soloud/) - audio engine  
+- [TMX C Loader](https://github.com/baylej/tmx) - loading [Tiled](https://www.mapeditor.org/) maps
+- [rlgl](https://github.com/raysan5/raylib/blob/master/src/rlgl.h) - OpenGL wrapper
+
+Slate2D currently runs on Windows, OS X, Linux, and web via Emscripten. Maybe it'll be useful to someone else, someday!
+---
+year: 2016-
+---
+gallery: yes

@@ -18,7 +18,7 @@ There's probably a lot of other potential things to display on the screen, I jus
 
 This project was a lot of fun, and I hope that somehow in the future I can replace the screen and do something that updates a little more frequently. I really like the idea of having a display that doesn't have a backlight on your desk that blends in.
 ---
-sort_key: 3
+sort_key: 5
 ---
 summary: An e-ink display powered by an ESP8266 that occasionally connects to Wi-Fi to refresh its display with weather, or any other infrequently updating displays.
 ---

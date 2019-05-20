@@ -1,0 +1,32 @@
+name: Jepbotty
+---
+description:
+
+One of the silly thing I loved, and missed, about IRC were the mIRC trivia bots. They often ended up just being memorization tests, though. The question databases were small, answer checking was an exact match, and they often gave hints to compensate.
+
+Jepbotty is a Discord quiz bot, in the style of the IRC trivia bots of yore, but without many of the shortcomings. It supports multiple modes of play: the traditional game including Daily Doubles and selecting categories, a quick play mode that just blasts through questions at random, and a mode that even lets players buzz in using Discord's push-to-talk. It uses real questions from [J-Archive](https://j-archive.com/). Answers must be given in the form of a question, and a fuzzy matching algorithm is used to try and account for typos and differences in phrasing.
+
+The main game logic is built with an FSM through [Machina.js](http://machina-js.org/). Unsurprisingly, the flow of a quiz game is the perfect candidate for a state machine. It definitely made development easier, and getting new features online without breaking everything else was great. The Discord bot attaches some Discord specific information to the game object, the FSM is started, and then all of the Discord side is handled by events from the FSM. This kept any Discord code separate from any game logic.
+
+Some global stats were implemented on the Discord side to round out the features, and the end result was as planned: a pretty fun quiz bot that does it better than the IRC bots.
+---
+summary: A Discord bot that plays a famous quiz game. Multiple rounds, bidding, and even an optional mode where you buzz in with voice chat!
+---
+year: 2019
+---
+sort_key: 1
+---
+actions:
+
+#### link ####
+name: Add Bot to Discord Server
+----
+url: https://discordapp.com/oauth2/authorize?client_id=574026185986801675&permissions=272448&scope=bot
+----
+newWindow: yes
+#### link ####
+name: Source Code
+----
+url: https://github.com/sponge/jepbot
+----
+newWindow: yes
