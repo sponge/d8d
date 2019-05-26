@@ -1,0 +1,17 @@
+name: RAGE 2
+---
+description:
+
+My participation in RAGE 2 was a back office application to help our producers put together store metadata from start to finish, by handling assets, inserting localization strings, and the final metadata generation and file uploading.
+
+The application is a single page application built in React. Hooks were recently released into the stable version of React, and I took the opportunity to use them.
+
+While most of the codebase is a pretty straightforward record-based editor form, I attempted to streamline the process as much as possible. Localization is imported, and string matching is used to pre-fill out records and records fields using a best guess. Store images are imported once, and resized by the browser before uploading.
+
+During the final export and upload, the source file is used to generate all the language and platform variations. Image uploading is processed first, and is performed in parallel by queueing up promises. Failed uploads can be retried on an individual file basis, as opposed to having to re-upload the whole batch. Afterward, the store metadata upload starts which sets everything live.
+
+Overall, hooks were a great choice for the application. The benefits worked out pretty much as advertised! Components were smaller, code for a specific concern were more centralized, and I didn't have to use any class-based components at all.
+---
+summary: I contributed a back office application for managing the items in the in-game store in RAGE 2, helping our producers to quickly put together store layouts on all platforms, in all languages.
+---
+year: 2019
