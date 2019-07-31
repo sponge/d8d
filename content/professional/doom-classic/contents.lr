@@ -1,0 +1,30 @@
+name: Doom Classic
+---
+actions:
+
+#### link ####
+name: Doom 1 (Switch)
+----
+url: https://www.nintendo.com/games/detail/doom-1993-switch/
+----
+newWindow: yes
+#### link ####
+name: Doom 2 (Switch)
+----
+url: https://www.nintendo.com/games/detail/doom-2-classic-switch/
+----
+newWindow: yes
+---
+description:
+
+I worked on the Doom 1 and Doom 2 source ports to consoles and mobile, mostly on Nintendo Switch specific issues. The ports were built on top of Unity, which was an immense help in getting everything running on all platforms simultaneously, and definitely saved time when it came down to implementing and handling everything required to ship a console game.
+
+Unlike most Unity titles, however, none of the game logic or even the rasterization is handled in Unity. The Doom engine itself is entirely deployed as a dynamic library, exposing an interface that which all aspects of I/O (video, audio, input, filesystem, and network). Unity is responsible for feeding in all the inputs, and receives back a buffer containing the on-screen contents that is then blitted to a Unity canvas.
+
+This means that the port looks and runs exactly like the original games did, albeit at a higher internal resolution. Handling all the different types of inputs and types of controllers becomes a lot simpler, and UI can use Unity's UI system across the whole app, instead of either trying to cram everything into the original game's UI system, or developing one on top of that.
+
+Split screen is handled by faking a multiplayer match. Since the engine has been modified to allow multiple global states to be instantiated and swapped out at will, the engine can run as many clients as the hardware can handle, driving all of them separately. Networking is handled by just passing packet contents around through a buffer in memory.
+---
+summary: I worked on the Unity based Doom ports released in 2019 on Nintendo Switch, PS4, Xbox One, iOS, and Android.
+---
+year: 2019
