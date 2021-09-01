@@ -36,15 +36,3 @@ name: Nintendo Switch
 url: https://www.nintendo.com/games/detail/quake-switch/
 ----
 newWindow: yes
-#### link ####
-name: Xbox
-----
-url: https://www.microsoft.com/en-us/p/Quake/9P1Z43KRNQD4
-----
-newWindow: yes
-#### link ####
-name: PlayStation
-----
-url: https://store.playstation.com/en-us/product/UP1003-CUSA24593_00-QKRMST0000000000/
-----
-newWindow: yes
