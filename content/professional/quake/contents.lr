@@ -1,0 +1,50 @@
+name: Quake
+---
+description:
+
+I worked on the 2021 rereleases of Quake from start until finish, launched at QuakeCon 2021 for the 25th anniversary of Quake. These ports were created using Night Dive Studios' KEX Engine, running on top of the original Quake code. This helped us get the game running on all of the platforms we wanted to, however getting the game running is only the first step. This port ended up being quite a large project, with close to 100 levels over five games worth of content, including a brand new episode created for the 25th anniversary.
+
+My responsibilities on the project was all over the place. All of the menus were recreated using [Dear Imgui](https://github.com/ocornut/imgui) which ended up being a mixed bag for user-facing game UIs, but the simplicity of Quake's UI requirements still won out in the end.
+
+The original Quake engine had no support for localization, so I was responsible for implementing French, Italian, German, Spanish, and Russian language support in all parts of the game and UI. In addition to requiring some network protocol changes, every location in the game's built in scripting language QuakeC that deals with strings had to be found.
+
+I also dove into the original development archives to find as many of the original audio clips in 22KHz vs the original 11KHz, and I was able to recover over 90% of the audio in the original game. I also found and cleaned up the original source files for the levels in the game, getting them ready to receive improved lighting and fixes.
+
+With so many platforms, having to manually build all the packages was starting to really drag down development time. I setup build scripts and configured a Jenkins CI instance to get the game building ready for release packages on every commit, and worked on improving collecting and bundling up all the files required to run the game in a final build.
+
+Online multiplayer was included, courtesy of Azure PlayFab, and I was involved with much of the setup and configuration of the multiplayer services side of the game. Quake was the first cross-play game that Bethesda shipped, with cross-play supported across all platforms. Dedicated servers running on Linux had to be built and deployed with Docker, and I was responsible for automating the Docker container creation.
+
+Quake has always been a huge part of my gaming life, and it has been amazing getting the opportunity to not only work on a port, but also be able to push the bounds of how much work and improvements we can make to the original game. Quake has never been ported to anything since the N64 and Sega Saturn, and being able to put my mark with the biggest port that id has put out has quite actually been a childhood dream come true.
+---
+gallery: yes
+---
+summary: I was a senior programmer on the highly acclaimed 2021 rereleases of Quake that came out on PC, PS4, PS5, XB1, XBS, and Switch.
+---
+year: 2021
+---
+actions:
+
+#### link ####
+name: PC (Steam)
+----
+url: https://store.steampowered.com/app/2310/QUAKE/
+----
+newWindow: yes
+#### link ####
+name: Nintendo Switch
+----
+url: https://www.nintendo.com/games/detail/quake-switch/
+----
+newWindow: yes
+#### link ####
+name: Xbox
+----
+url: https://www.microsoft.com/en-us/p/Quake/9P1Z43KRNQD4
+----
+newWindow: yes
+#### link ####
+name: PlayStation
+----
+url: https://store.playstation.com/en-us/product/UP1003-CUSA24593_00-QKRMST0000000000/
+----
+newWindow: yes
