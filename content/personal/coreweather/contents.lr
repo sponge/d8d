@@ -1,4 +1,4 @@
-name: CoreWeather
+name: JSWeather
 ---
 actions:
 
@@ -15,10 +15,6 @@ gallery: yes
 ---
 year: 2017
 ---
-description:
-
-A community I'm in moved from IRC to Discord, and with it came a rewrite of our channel bot. As someone who loves the aesthetic of the old WeatherStar 4000, I wanted to make a static image inspired by it. Pretty simple, besides having to wrestle with incompatible ImageSharp updates.
-
-While it is used entirely in the Discord bot, I originally wrote it, and occasionally have to update it in this separate repository. It'll dump out a PNG, and uses the Dark Sky weather API on it's own.
+description: As someone who loves the aesthetic of the old WeatherStar 4000, I wanted our Discord bot to have something more fun than just a bunch of lame text. Why not generate and upload an animated gif every time someone wants to know the weather? This seems like an excellent use of CPU and bandwidth.
 ---
-summary: A C# script embedded into a Discord bot that generates early 90s style Weather Channel displays.
+summary: Generates GIFs of early 90s style Weather Channel displays for use in a Discord bot.

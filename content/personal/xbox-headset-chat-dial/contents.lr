@@ -1,0 +1,28 @@
+name: Xbox Headset Chat Dial
+---
+gallery: yes
+---
+actions:
+
+#### link ####
+name: Source Code
+----
+url: https://github.com/sponge/xbox-headset-chat-dial
+----
+newWindow: yes
+---
+sort_key: 1
+---
+year: 2021
+---
+summary: Enables use of the Xbox Wireless Headset's chat dial, a hardware dial that adjusts the volume of the voice separately from the game volume.
+---
+description:
+
+The [Xbox Wireless Headset](https://www.xbox.com/en-US/accessories/headsets/xbox-wireless-headset) is a great, relatively cheap wireless headset for gaming. When using it on an Xbox, the right ear cup rotates to adjust volume, and the left ear cup controls the split between game and voice. When using the headset under Windows, the right cup still controls the audio, but the left year controlling the split does nothing. With seemingly no update on the horizon to support this, I started to look into how it works.
+
+My initial suspicion was that it is being handled entirely by the OS. It wouldn't make much sense to try and setup a second channel on the headset to send audio to, and the complexities that would entail. Using [USBPcap](https://desowin.org/usbpcap/) I was able to figure out that some sort of update packet was sent when either ear cup was rotated, and this contained a readout of the current position of the controls.
+
+Since I was already using USBPcap, the hacky but easy solution was just to use USBPcap's external capture feature and read from the named pipe inside Python. There may be a better way to hook into the USB messages, but that is way out of my field of knowledge. Once I was able to read out the volume status, it was just a matter of figuring out how to control the application specific audio to find and adjust the volume for `discord.exe`.
+
+I was surprised that this basically works! It is a pretty useful little utility, and I still hope that it will someday be officially supported.

@@ -1,0 +1,35 @@
+name: Discwordle
+---
+description:
+
+Discwordle is a simple Discord bot that plays as many games of [Wordle](https://www.powerlanguage.co.uk/wordle/) as your heart desires.
+
+Figure out the random word in a set amount of guesses. Green letters mean that the letter is in the word and in the correct spot, yellow letters are in the word but in the wrong spot, and gray letters are not in the word at all. All players cooperate on the same board, with a shared amount of guesses.
+
+Below the board, a reference for what letters have been used is displayed. Letters not in the word will dim out if they are not in the final word, making it easy to tell which letters to focus on.
+
+Discwordle is based off of [hello wordl](https://hellowordl.net), a web version of the game that lets you choose the amount of letters in the word.
+
+---
+gallery: yes
+---
+sort_key: 1
+---
+summary: A cooperative version of the popular word game, playable over Discord. Guess the secret word in six guesses or less.
+---
+year: 2022
+---
+actions:
+
+#### link ####
+name: Add Bot to Discord Server
+----
+url: https://discord.com/api/oauth2/authorize?client_id=929196686243397672&permissions=264192&scope=bot%20applications.commands
+----
+newWindow: yes
+#### link ####
+name: Source Code
+----
+url: https://github.com/sponge/discwordle
+----
+newWindow: yes
