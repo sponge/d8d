@@ -1,0 +1,38 @@
+name: Quake II
+---
+description:
+
+After the success of the first rerelease of Quake, the natural next step was to do the same for Quake II! While the original Quake has continued to have an active community over a quarter of a century later, Quake II has not been as lucky. I felt we needed to take a different approach with Quake II, and have a heavier hand on improving places where we felt the game has not aged as well.
+
+Once again we used Night Dive Studios' KEX Engine, running on top of the original Quake II code. This time around, we were able to use the Xbox 360 port of the game in order to get split screen working, which otherwise was not very different from the original PC release.
+
+Gameplay and enemy AI was tweaked, with enemies now using the bot navigation waypoints to allow them to more intelligently chase you around and flank you. Given that the Strogg are intended to be human-like intellect, this makes them feel way more like how they are depicted, instead of animal or demon-like monsters.
+
+The UI was an evolution of the UI in Quake, essentially being a new skin on top of the same base features, much like the original Quake II. The major addition was the id Vault, a look into the collection of cut materials, including an image viewer with basic pan and zoom controls.
+
+We were also able to work with the authors of [ericw_tools](http://ericwa.github.io/ericw-tools/) to finish support for Quake II maps, and supporting lightmap enhancements. This was taken advantage in the new campaign, Call of the Machine, also created by MachineGames artists and designers in their spare time. We were able to work more closely with them to add more of their requests, in both tools and game code.
+
+Finally, I was able to contribute a very lengthy [tech rundown article](https://bethesda.net/en/article/6NIyBxapXOurTKtF4aPiF4/enhancing-quake-ii) for launch. It is a highly recommended read if you're interested in learning about the changes in more detail.
+
+Overall, I felt we were able to make big improvements to the core game while remaining true to what it was. Quake II has a complicated reception among shooter fans nowadays, and we were able to win over a lot of people who weren't fans of the game when it came out. Despite keeping the original art, the scope of changes were closer to a full remaster instead of just a rerelease.
+---
+gallery: yes
+---
+summary: I was once again a senior programmer on the once again highly acclaimed 2023 rereleases of Quake II that came out on PC, PS4, PS5, XB1, XBS, and Switch.
+---
+year: 2023
+---
+actions:
+
+#### link ####
+name: PC (Steam)
+----
+url: https://store.steampowered.com/app/2320/Quake_II/
+----
+newWindow: yes
+#### link ####
+name: Nintendo Switch
+----
+url: https://www.nintendo.com/store/products/quake-ii-switch/
+----
+newWindow: yes
