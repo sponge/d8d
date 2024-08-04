@@ -39,10 +39,10 @@ jobs:
 
       - name: Build lektor website
         run: lektor build -f webpack -O '${{ env.OUTPUT }}'
-        
+
       - name: Deploy lektor website
         if: env.DEPLOY == 'true'
         run: lektor deploy -O '${{ env.OUTPUT }}'
         env:
-          LEKTOR_DEPLOY_USERNAME: lektor
+          LEKTOR_DEPLOY_USERNAME: sponge
           LEKTOR_DEPLOY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
