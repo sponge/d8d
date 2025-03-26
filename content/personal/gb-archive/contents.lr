@@ -1,0 +1,32 @@
+name: GB Archive
+---
+actions:
+
+#### link ####
+name: Site
+----
+url: https://alligator.github.io/gb-archive/
+----
+newWindow: yes
+#### link ####
+name: Source Code
+----
+url: https://github.com/alligator/gb-archive
+----
+newWindow: yes
+---
+summary: A frontend for the Giant Bomb collection on the Internet Archive.
+---
+year: 2024
+---
+sort_key: 1
+---
+gallery: no
+---
+description:
+
+As gaming website Giant Bomb got shuffled through various owners, some folks got concerned and archived all the videos on it just in case. These were uploaded to archive.org. The IA interface is not ideal for watching and finding videos, and even less so for going through a series of video.
+
+This UI was created as a way to quickly browse and search through videos, watch a full series in order, or just put something random on for noise, in the wake of the death of Giant Bomb Infinite. Viewing progress is tracked through local storage, so you can come back later and pick where you left off. Filter videos by show, date, video title, or by era (a rough collection of major events in the site's history). Autoplay through videos in order, or randomize play of any set of videos you want. Pick a random UPF between 2010 and 2012? Sure, why not!
+
+Mostly made to scratch a personal itch, it has been real useful for just having some noise in the background without having to think too much.

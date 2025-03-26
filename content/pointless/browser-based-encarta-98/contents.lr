@@ -1,0 +1,14 @@
+name: Browser Based Encarta 98
+---
+actions:
+
+#### link ####
+name: Site
+----
+url: https://spongeserv.com/encarta98
+----
+newWindow: yes
+---
+summary: In this modern world, you can't tell if you're getting real info, regurgitated and wrong AI slop, or a rogue Wikipedia editor. Why not return to a source you know and you can trust: Encarta 98 in the browser! Powered by PCjs, and a stripped down Windows install, it is seeded with a ready-to-use snapshot, in under 40MB. The rest of the install is streamed through the browser on-demand. Includes fully playable MindMaze!
+---
+year: 2023
