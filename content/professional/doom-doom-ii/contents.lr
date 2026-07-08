@@ -2,7 +2,7 @@ name: DOOM + DOOM II
 ---
 description:
 
-The Unity ports of DOOM were very solid ways to play the game, but five years after their initial release, we had an opportunity to update them. Ported to Nightdive's KEX Engine, we also were able to add PlayStation 5 and Xbox Series support, which brought 4K 120hz rendering due to a major overhaul to the renderer, adding multithreading support. We were also able to license a clean-room implementation of Boom and MBF21, making the port even more capable of playing modern WADs. Finally, an online mod database, allowing console players to get in on the fun of the DOOM modding community.
+The Unity ports of DOOM were very solid ways to play the game, but five years after their initial release, we had an opportunity to update them. Ported to Nightdive's KEX Engine, we also were able to add PlayStation 5 and Xbox Series support, which brought 4K 120hz rendering due to a major overhaul to the renderer adding multithreading,. We were also able to license a clean-room implementation of Boom and MBF21, making the port even more capable of playing modern WADs. Finally, an online mod database, allowing console players to get in on the fun of the DOOM modding community.
 
 For this project, we used <a href="https://coherent-labs.com/">Coherent Labs</a> <a href="https://coherent-labs.com/products/coherent-gameface/">Gameface</a>, an HTML/JS based UI library that runs everywhere. This means that the original 1993 UI was completely torn out, and replaced with what is basically a glorified web app, but without the massive overhead of Proton and a full web browser. I was responsible for the whole UI system, from the framework to content.
 
@@ -19,3 +19,18 @@ gallery: yes
 summary: An update to the 2019 ports of DOOM and DOOM II, with every official release bundled into one package, on top of a new engine.
 ---
 year: 2024
+---
+actions:
+
+#### link ####
+name: PC (Steam)
+----
+url: https://store.steampowered.com/app/2280/DOOM__DOOM_II/
+----
+newWindow: yes
+#### link ####
+name: Nintendo Switch
+----
+url: https://www.nintendo.com/us/store/products/doom-plus-doom-ii-switch/
+----
+newWindow: yes

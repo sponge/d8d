@@ -7,6 +7,8 @@ Quake Champions dates back to as early as 2013, where I was responsible for prog
 Once the game became available, I was able to work on a new stats site, drawing from the types of stats we would show in Quake Live. The front-end is a single page application using [Create React App](https://github.com/facebook/create-react-app). Based on how successful the Quake Live Steam UI was, being able to use modern React with modern JavaScript was a no brainer. Some of the charts were built with [Recharts](http://recharts.org) and the rest are just plain SVG.
 
 In addition to the stats site, I was responsible for creating reports and dashboards for use by our team for internal purposes. I typically would receive ad-hoc questions about topics like retention or player behavior, and developed reports based on what data we have available.
+
+Unfortunately, the stats site and heatmap have been taken offline, but the heatmap application has been mirrored locally.
 ---
 year: 2015-2019
 ---
@@ -17,9 +19,9 @@ sort_key: 0
 actions:
 
 #### link ####
-name: Stats Site
+name: Heatmaps
 ----
-url: https://stats.quake.com
+url: https://spongeserv.com/qc-heatmap/
 ----
 newWindow: yes
 ---

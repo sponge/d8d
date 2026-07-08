@@ -1,0 +1,32 @@
+name: Heretic + Hexen
+---
+description:
+
+Heretic and Hexen are two different shooters put out by Raven Software in the mid 90s, both built off of the original DOOM engine. Unlike DOOM and DOOM II, they are not differentiated by some levels and enemies. Hexen adds multiple classes, a hub world, RPG stats, and a scripting language that can be used in levels, while Heretic doesn't stray far from the DOOM gameplay.
+
+The existing DOOM + DOOM II port, plus how different the games were led to an early critical decision. Starting from the base source code would be safer, but could end up taking a lot more time due to having to re-implement split screen and all the enhancements we made over the years. We ultimately went with porting Heretic and Hexen into DOOM. It was still a challenge, but we made the right decision as we were able to get the games running quicker and start iterating on what was different or broken. Normally when porting old games, the game simulation doesn't change much during development. Heretic + Hexen felt more like a traditional game where bugs were being fixed up until the end.
+
+The UI carried over from DOOM + DOOM II, with a new skin on top. I decided to try and one-up the UI in DOOM by offering a right panel with settings descriptions for everything selected. This was a great change that helped explain some of the sometimes confusing very detailed settings. Otherwise, the goal was mainly just polish and learning lessons from feedback from DOOM + DOOM II.
+
+A highlight of this project was getting to work with Raven Software, and the former Human Head Studios, both of which still had many of the original development team. They still had access to original sketches and concept art that was drawn for the game, such a rarity for games from that era. Unfortunately, the studio was closed in mid-2025 during a large layoffs sweep, dashing any hopes for a reunion at QuakeCon that year.
+---
+summary: The first modern rerelease of Heretic and Hexen in over 25 years, built on an enhanced version of the DOOM + DOOM II engine.
+---
+year: 2025
+---
+actions:
+
+#### link ####
+name: PC (Steam)
+----
+url: https://store.steampowered.com/app/3286930/Heretic__Hexen/
+----
+newWindow: yes
+#### link ####
+name: Nintendo Switch
+----
+url: https://www.nintendo.com/us/store/products/heretic-plus-hexen-switch/
+----
+newWindow: yes
+---
+gallery: yes
